@@ -1,5 +1,6 @@
 const express = require("express");
 const users = require("./routes/users");
+const enviar_aviso = require("./routes/enviar-aviso");
 const cors = require("cors");
 
 const app = express();
@@ -15,6 +16,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/users", users);
+app.use("/enviar-aviso", enviar_aviso);
 
 app.listen(port, () => {
   console.log(`Servidor Ejecutandose en: http://localhost:${port}`);
