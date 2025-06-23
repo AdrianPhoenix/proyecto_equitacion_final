@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import { useLocation } from "react-router-dom";
 
 const beneficios = [
   "Mejora física y motriz",
@@ -10,6 +12,14 @@ const beneficios = [
 ];
 
 const EquinoterapiaPage = () => {
+  const location = useLocation();
+  useEffect(() => {
+    // Scroll to top when navigating to this page
+    if (location.pathname === "/equinoterapia") {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
   return (
     <main className="bg-background min-h-screen w-full">
       {/* Hero */}
@@ -24,7 +34,8 @@ const EquinoterapiaPage = () => {
             Equinoterapia en Caracas
           </h1>
           <p className="text-lg md:text-2xl text-white/90 mb-8 font-lora">
-            Vive una experiencia transformadora que une la nobleza del caballo con el bienestar físico, emocional y social de las personas.
+            Vive una experiencia transformadora que une la nobleza del caballo
+            con el bienestar físico, emocional y social de las personas.
           </p>
           <a
             href="#contacto"
@@ -39,7 +50,7 @@ const EquinoterapiaPage = () => {
       <section className="py-20 px-4 max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
         <div className="flex-1">
           <img
-            src="./images/caballo1.jpeg"
+            src="./images/equinoterapia_image.jpeg"
             alt="Sesión de equinoterapia"
             className="rounded-3xl shadow-2xl border-4 border-primary/20 w-full object-cover h-72 md:h-[24rem] mb-8 md:mb-0"
           />
@@ -49,7 +60,11 @@ const EquinoterapiaPage = () => {
             ¿Qué es la equinoterapia?
           </h2>
           <p className="text-lg md:text-xl text-text-light mb-6 font-lora">
-            La equinoterapia es una terapia asistida con caballos que ayuda a mejorar la calidad de vida de personas con diversas condiciones físicas, emocionales y cognitivas. Es una oportunidad única para crecer, sanar y conectar con la naturaleza a través de la relación con estos animales extraordinarios.
+            La equinoterapia es una terapia asistida con caballos que ayuda a
+            mejorar la calidad de vida de personas con diversas condiciones
+            físicas, emocionales y cognitivas. Es una oportunidad única para
+            crecer, sanar y conectar con la naturaleza a través de la relación
+            con estos animales extraordinarios.
           </p>
           <ul className="flex flex-wrap gap-3 mb-4">
             {beneficios.map((b) => (
@@ -72,13 +87,15 @@ const EquinoterapiaPage = () => {
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="bg-white/90 rounded-3xl shadow-xl p-8 border-t-4 border-primary flex flex-col">
             <p className="text-lg text-custom-text mb-4 font-lora">
-              “La equinoterapia ha sido fundamental en el desarrollo de mi hijo. Ha mejorado su confianza y motricidad de una manera increíble.”
+              “La equinoterapia ha sido fundamental en el desarrollo de mi hijo.
+              Ha mejorado su confianza y motricidad de una manera increíble.”
             </p>
             <span className="font-bold text-primary">María G.</span>
           </div>
           <div className="bg-white/90 rounded-3xl shadow-xl p-8 border-t-4 border-primary flex flex-col">
             <p className="text-lg text-custom-text mb-4 font-lora">
-              “Gracias a las sesiones, he logrado reducir mi ansiedad y encontrar un espacio de paz junto a los caballos.”
+              “Gracias a las sesiones, he logrado reducir mi ansiedad y
+              encontrar un espacio de paz junto a los caballos.”
             </p>
             <span className="font-bold text-primary">Carlos R.</span>
           </div>
@@ -91,7 +108,9 @@ const EquinoterapiaPage = () => {
           ¿Dónde estamos?
         </h2>
         <p className="text-text-light text-lg mb-8 max-w-2xl mx-auto">
-          Nuestras sesiones de equinoterapia se realizan en <span className="text-primary font-bold">Caracas, Venezuela</span>, en un entorno natural y seguro.
+          Nuestras sesiones de equinoterapia se realizan en{" "}
+          <span className="text-primary font-bold">Caracas, Venezuela</span>, en
+          un entorno natural y seguro.
         </p>
         <div className="w-full max-w-3xl mx-auto rounded-3xl overflow-hidden shadow-2xl bg-white border-4 border-primary/10">
           <iframe
@@ -114,7 +133,8 @@ const EquinoterapiaPage = () => {
           ¿Quieres saber más sobre equinoterapia?
         </h2>
         <p className="text-white/90 text-lg mb-8">
-          Contáctanos para reservar una sesión o recibir información personalizada.
+          Contáctanos para reservar una sesión o recibir información
+          personalizada.
         </p>
         <a
           href="#contacto"

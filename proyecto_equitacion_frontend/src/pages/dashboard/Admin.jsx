@@ -9,11 +9,7 @@ const rolesDashboard = [
     label: "Profesores",
     color: "bg-green-100 text-green-800",
   },
-  {
-    value: "fisioterapeuta",
-    label: "Fisioterapeutas",
-    color: "bg-purple-100 text-purple-800",
-  },
+
 ];
 
 const Admin = () => {

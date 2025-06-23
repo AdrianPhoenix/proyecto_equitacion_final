@@ -128,7 +128,6 @@ const Profesores = () => {
         </form>
       </section>
 
-      {/* Tabla de alumnos */}
       <section className="bg-white rounded-xl shadow p-6">
         <h2 className="text-lg font-semibold mb-4 text-blue-700">
           Lista de Profesores

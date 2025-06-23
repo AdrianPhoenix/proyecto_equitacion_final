@@ -18,7 +18,8 @@ const Equinoterapia = () => {
         <span className="block h-2 w-2/3 mx-auto bg-primary/30 rounded-full mt-2"></span>
       </h2>
       <p className="text-xl md:text-2xl text-custom-text max-w-3xl mx-auto mb-12 font-lora">
-        Una experiencia transformadora que une la fuerza y nobleza del caballo con el bienestar físico, emocional y social de las personas.
+        Una experiencia transformadora que une la fuerza y nobleza del caballo
+        con el bienestar físico, emocional y social de las personas.
       </p>
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div className="text-left sm:text-center flex flex-col items-start sm:items-center">
@@ -26,9 +27,13 @@ const Equinoterapia = () => {
             ¿Qué es?
           </h3>
           <p className="text-lg md:text-xl text-text-light leading-relaxed mb-8">
-            La equinoterapia es una terapia asistida con caballos que ayuda a mejorar la calidad de vida de personas con diversas condiciones físicas, emocionales y cognitivas. 
+            La equinoterapia es una terapia asistida con caballos que ayuda a
+            mejorar la calidad de vida de personas con diversas condiciones
+            físicas, emocionales y cognitivas.
             <span className="block mt-2">
-              Es una oportunidad única para crecer, sanar y conectar con la naturaleza a través de la relación con estos animales extraordinarios.
+              Es una oportunidad única para crecer, sanar y conectar con la
+              naturaleza a través de la relación con estos animales
+              extraordinarios.
             </span>
           </p>
           <ul className="mb-8 w-full flex flex-wrap gap-3 justify-start sm:justify-center">
@@ -51,7 +56,7 @@ const Equinoterapia = () => {
         <div className="flex justify-center items-center">
           <div className="relative group w-full max-w-md">
             <img
-              src="./images/equinoterapia.png"
+              src="./images/equinoterapia.jpeg"
               alt="Equinoterapia en acción"
               className="w-full h-80 md:h-[28rem] object-contain bg-white rounded-3xl shadow-2xl border-4 border-primary/20 transition-transform duration-500 group-hover:scale-105 group-hover:shadow-[0_8px_40px_0_rgba(0,0,0,0.25)]"
             />

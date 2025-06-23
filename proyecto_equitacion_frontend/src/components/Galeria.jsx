@@ -6,19 +6,19 @@ const images = [
     alt: "Jinete y caballo saltando un obstáculo",
   },
   {
-    src: "./images/caballo2.png",
+    src: "./images/caballo2.jpeg",
     alt: "Retrato de un caballo marrón con brida",
   },
   {
-    src: "./images/caballo3.jpg",
+    src: "./images/caballo3.jpeg",
     alt: "Grupo de caballos pastando en un campo verde",
   },
   {
-    src: "./images/caballo4.jpg",
+    src: "./images/caballo4.jpeg",
     alt: "Detalle de las herraduras de un caballo",
   },
   {
-    src: "./images/caballo5.jpg",
+    src: "./images/caballo5.jpeg",
     alt: "Niña acariciando la nariz de un caballo",
   },
   {

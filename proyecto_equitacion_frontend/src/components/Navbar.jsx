@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const navLinks = [
-  { href: "#ubicacion", label: "Ubicación" },
+  { href: "/#ubicacion", label: "Ubicación" },
   { href: "#contacto", label: "Contacto" },
 ];
 
@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
           {/* Logo */}
           <img
-            src="/images/logo.png"
+            src="/images/logo.jpg"
             alt="Logo Sociedad Negro Primero"
             className="h-16 mb-1 drop-shadow-lg scale-[1.4] relative left-10"
           />

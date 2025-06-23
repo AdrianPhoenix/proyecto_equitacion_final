@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import { useLocation } from "react-router-dom";
 
 const EquitacionPage = () => {
+  const location = useLocation();
+  useEffect(() => {
+    // Scroll to top when navigating to this page
+    if (location.pathname === "/equitacion") {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
   return (
     <main className="bg-background min-h-screen w-full">
       {/* Hero */}
@@ -59,7 +69,7 @@ const EquitacionPage = () => {
           </p>
         </div>
       </section>
-      
+
       {/* Costos y Horarios */}
       <section className="py-20 px-4 bg-white/90 border-y border-primary/10">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 font-merriweather text-center">
@@ -141,10 +151,10 @@ const EquitacionPage = () => {
         <div className="w-full max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 auto-rows-[180px] md:auto-rows-[220px]">
           {[
             "./images/caballo1.jpeg",
-            "./images/caballo2.png",
-            "./images/caballo3.jpg",
-            "./images/caballo4.jpg",
-            "./images/caballo5.jpg",
+            "./images/caballo2.jpeg",
+            "./images/caballo3.jpeg",
+            "./images/caballo4.jpeg",
+            "./images/caballo5.jpeg",
             "./images/caballo6.jpg",
           ].map((src, i) => (
             <div

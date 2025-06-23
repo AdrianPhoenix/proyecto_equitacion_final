@@ -72,6 +72,7 @@ const Calendar = ({ user }) => {
       user: user,
       horario: horarioParaEnviar,
     });
+    alert("Horario actualizado correctamente");
     return response;
   };
 
@@ -108,7 +109,12 @@ const Calendar = ({ user }) => {
                   </li>
                 )
             )}
-            <button className="bg-primary text-white px-5 py-2 rounded-md cursor-pointer" onClick={actualizarHorario}>Actualizar Horario</button>
+            <button
+              className="bg-primary text-white px-5 py-2 rounded-md cursor-pointer"
+              onClick={actualizarHorario}
+            >
+              Actualizar Horario
+            </button>
           </ul>
         )}
       </div>

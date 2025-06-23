@@ -28,11 +28,16 @@ const Login = () => {
       const success = await login(username, password);
 
       if (success) {
+        console.log("succes: ", success);
+        console.log("role: ", success.role);
+        console.log("Login.jsx: Login exitoso. Redirigiendo a /dashboard.");
+        console.log("Login.jsx: Rol obtenido en login:", success.role);
         // 3. Si el login es exitoso, redirige al dashboard
         navigate("/dashboard", { replace: true }); // 'replace: true' evita volver al login con el botón de atrás
       } else {
         // Si la función de login devuelve false (credenciales incorrectas)
         setError("Nombre de usuario o contraseña incorrectos.");
+        console.log("Login.jsx: Credenciales incorrectas.");
       }
     } catch (err) {
       // Manejo de errores de la API o de la red
@@ -131,17 +136,6 @@ const Login = () => {
             </button>
           )}
         </form>
-        <div className="w-full flex flex-col md:flex-row justify-between items-center mt-6 gap-2">
-          <a href="#" className="text-primary hover:underline text-sm">
-            ¿Olvidaste tu contraseña?
-          </a>
-          <a
-            href="/register.html"
-            className="text-primary font-bold hover:underline text-sm"
-          >
-            ¿No tienes cuenta? Regístrate
-          </a>
-        </div>
       </div>
     </section>
   );
